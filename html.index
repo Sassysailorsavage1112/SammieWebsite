@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sammie Crisman | Web Developer & Software Engineer</title>
+
+<meta
+name="description"
+content="Custom websites and software experiences created by Sammie Crisman."
+>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- =========================
+GALAXY BACKGROUND
+========================== -->
+
+<div class="space">
+<div class="milky-way"></div>
+
+<div class="stars stars-1"></div>
+<div class="stars stars-2"></div>
+<div class="stars stars-3"></div>
+
+<div class="planet planet-one"></div>
+<div class="planet planet-two"></div>
+<div class="planet planet-three"></div>
+
+<div class="orbit orbit-one"></div>
+<div class="orbit orbit-two"></div>
+
+<div class="shooting-star shooting-star-one"></div>
+<div class="shooting-star shooting-star-two"></div>
+<div class="shooting-star shooting-star-three"></div>
+</div>
+
+<!-- =========================
+NAVIGATION
+========================== -->
+
+<header class="navbar">
+
+<div class="logo">
+<span>✦</span>
+Sammie Crisman
+</div>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#services">Services</a>
+<a href="#pricing">Pricing</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<button
+class="theme-toggle"
+id="themeToggle"
+aria-label="Toggle light and dark galaxy mode"
+>
+🌙
+</button>
+
+</header>
+
+
+<!-- =========================
+HERO
+========================== -->
+
+<main>
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+<div class="eyebrow">
+✨ SOFTWARE • DESIGN • DIGITAL EXPERIENCES
+</div>
+
+<h1>
+Websites That Feel
+<span>Out of This World.</span>
+</h1>
+
+<p class="hero-text">
+Beautiful, responsive websites and digital experiences designed
+to help businesses, creators, and entrepreneurs stand out online.
+</p>
+
+<div class="hero-buttons">
+
+<a href="#pricing" class="btn btn-primary">
+🚀 View Pricing
+</a>
+
+<a href="#projects" class="btn btn-secondary">
+✨ Explore My Work
+</a>
+
+</div>
+
+<div class="hero-contact">
+
+<a href="mailto:sammiecrisman@gmail.com">
+✉️ sammiecrisman@gmail.com
+</a>
+
+<a href="tel:+17147971287">
+📱 (714) 797-1287
+</a>
+
+</div>
+
+</div>
+
+<div class="hero-planet">
+
+<div class="planet-glow"></div>
+
+<div class="planet-main">
+<div class="planet-crater crater-one"></div>
+<div class="planet-crater crater-two"></div>
+<div class="planet-crater crater-three"></div>
+</div>
+
+<div class="planet-ring"></div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+SERVICES
+========================== -->
+
+<section class="section" id="services">
+
+<div class="section-heading">
+
+<span>✦ WHAT I BUILD</span>
+
+<h2>
+Digital experiences
+<em>with personality.</em>
+</h2>
+
+<p>
+No cookie-cutter websites. I build responsive, modern experiences
+designed around your brand and your goals.
+</p>
+
+</div>
+
+
+<div class="service-grid">
+
+<article class="glass-card">
+<div class="service-icon">🌌</div>
+<h3>Custom Websites</h3>
+<p>
+Modern responsive websites built from the ground up with
+attention to design, performance, and usability.
+</p>
+</article>
+
+<article class="glass-card">
+<div class="service-icon">💻</div>
+<h3>Web Applications</h3>
+<p>
+Interactive React applications, dashboards, tools,
+forms, and custom functionality.
+</p>
+</article>
+
+<article class="glass-card">
+<div class="service-icon">✨</div>
+<h3>Beautiful UI</h3>
+<p>
+Animations, gradients, glass effects, responsive layouts,
+and visual experiences that make websites memorable.
+</p>
+</article>
+
+<article class="glass-card">
+<div class="service-icon">🚀</div>
+<h3>Launch & Deployment</h3>
+<p>
+Deployment, hosting setup, domain connection,
+optimization, and getting your site live.
+</p>
+</article>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+PRICING
+========================== -->
+
+<section class="section pricing-section" id="pricing">
+
+<div class="section-heading">
+
+<span>✦ PRICING</span>
+
+<h2>
+Choose your
+<em>launch.</em>
+</h2>
+
+<p>
+Straightforward packages for businesses, creators,
+and people who want something extraordinary.
+</p>
+
+</div>
+
+
+<div class="pricing-grid">
+
+<!-- STARTER -->
+
+<article class="pricing-card">
+
+<div class="pricing-icon">🌙</div>
+
+<h3>Starter</h3>
+
+<div class="price">
+<sup>$</sup>1,000
+</div>
+
+<p class="price-description">
+A polished online presence for getting started.
+</p>
+
+<ul>
+<li>✓ 1–3 pages</li>
+<li>✓ Responsive design</li>
+<li>✓ Custom styling</li>
+<li>✓ Contact section</li>
+<li>✓ Basic animations</li>
+<li>✓ Deployment</li>
+</ul>
+
+<a
+href="mailto:sammiecrisman@gmail.com?subject=Starter Website Inquiry"
+class="pricing-btn"
+>
+Launch This
+</a>
+
+</article>
+
+
+<!-- PROFESSIONAL -->
+
+<article class="pricing-card featured">
+
+<div class="popular">
+MOST POPULAR
+</div>
+
+<div class="pricing-icon">🪐</div>
+
+<h3>Professional</h3>
+
+<div class="price">
+<sup>$</sup>1,500
+</div>
+
+<p class="price-description">
+A complete custom website built around your brand.
+</p>
+
+<ul>
+<li>✓ Up to 6 pages</li>
+<li>✓ Custom UI/UX</li>
+<li>✓ Advanced animations</li>
+<li>✓ Contact forms</li>
+<li>✓ Mobile optimization</li>
+<li>✓ Deployment</li>
+<li>✓ SEO foundations</li>
+</ul>
+
+<a
+href="mailto:sammiecrisman@gmail.com?subject=Professional Website Inquiry"
+class="pricing-btn"
+>
+Build My Site
+</a>
+
+</article>
+
+
+<!-- PREMIUM -->
+
+<article class="pricing-card">
+
+<div class="pricing-icon">🌠</div>
+
+<h3>Premium</h3>
+
+<div class="price">
+<sup>$</sup>2,500+
+</div>
+
+<p class="price-description">
+A fully customized digital experience.
+</p>
+
+<ul>
+<li>✓ Custom website</li>
+<li>✓ Advanced React functionality</li>
+<li>✓ Premium animations</li>
+<li>✓ Interactive components</li>
+<li>✓ Custom integrations</li>
+<li>✓ Deployment</li>
+<li>✓ Priority support</li>
+</ul>
+
+<a
+href="mailto:sammiecrisman@gmail.com?subject=Premium Website Inquiry"
+class="pricing-btn"
+>
+Let's Build It
+</a>
+
+</article>
+
+</div>
+
+
+<div class="maintenance">
+
+<div>
+<strong>🌌 Website Care & Maintenance</strong>
+
+<p>
+Optional ongoing updates, maintenance, hosting assistance,
+and improvements.
+</p>
+</div>
+
+<strong class="maintenance-price">
+$49–$99/month
+</strong>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+PROJECTS
+========================== -->
+
+<section class="section" id="projects">
+
+<div class="section-heading">
+
+<span>✦ SELECTED WORK</span>
+
+<h2>
+A few things I've
+<em>built.</em>
+</h2>
+
+</div>
+
+
+<div class="projects-grid">
+
+
+<!-- BABY SHOWER -->
+
+<article class="project-card">
+
+<div class="project-image baby">
+
+<div class="project-stars">✦ · ✧ · ★ · ✦</div>
+
+<div class="project-preview">
+🧜‍♀️
+</div>
+
+</div>
+
+<div class="project-info">
+
+<span class="project-tag">
+EVENT WEBSITE
+</span>
+
+<h3>Baby Shower Experience</h3>
+
+<p>
+An ocean-inspired interactive baby shower website
+with animations, RSVP information, and custom visuals.
+</p>
+
+<a
+href="https://baby-shower-omega-livid.vercel.app/#invitation"
+target="_blank"
+rel="noopener noreferrer"
+>
+View Project →
+</a>
+
+</div>
+
+</article>
+
+
+<!-- T MONEY -->
+
+<article class="project-card">
+
+<div class="project-image money">
+
+<div class="money-symbol">$</div>
+
+<div class="record"></div>
+
+</div>
+
+<div class="project-info">
+
+<span class="project-tag">
+BRAND / MUSIC
+</span>
+
+<h3>T-Money Records</h3>
+
+<p>
+A bold music and merchandise experience created
+around the T-Money Records brand.
+</p>
+
+<a
+href="https://tmr-mu.vercel.app"
+target="_blank"
+rel="noopener noreferrer"
+>
+View Project →
+</a>
+
+</div>
+
+</article>
+
+
+<!-- FINAL PROJECT -->
+
+<article class="project-card">
+
+<div class="project-image code">
+
+<div class="code-symbol">
+&lt;/&gt;
+</div>
+
+<div class="floating-code">
+React • JavaScript • CSS
+</div>
+
+</div>
+
+<div class="project-info">
+
+<span class="project-tag">
+WEB DEVELOPMENT
+</span>
+
+<h3>Final Project</h3>
+
+<p>
+A software development project demonstrating
+frontend engineering and interactive web development.
+</p>
+
+<a
+href="https://final-project-module-5.vercel.app"
+target="_blank"
+rel="noopener noreferrer"
+>
+View Project →
+</a>
+
+</div>
+
+</article>
+
+
+<!-- BLUE WATER YACHTS -->
+
+<article class="project-card">
+
+<div class="project-image yacht">
+
+<div class="waves">
+≋ ≋ ≋
+</div>
+
+<div class="yacht-icon">
+⛵
+</div>
+
+</div>
+
+<div class="project-info">
+
+<span class="project-tag">
+BUSINESS WEBSITE
+</span>
+
+<h3>Blue Water Yachts</h3>
+
+<p>
+A marine-focused website concept showcasing
+luxury boats and blue-water adventures.
+</p>
+
+<!-- Replace this href with the live Blue Water Yachts URL -->
+<a
+href="#"
+onclick="alert('Blue Water Yachts project link coming soon!'); return false;"
+>
+View Project →
+</a>
+
+</div>
+
+</article>
+
+
+<!-- PORTFOLIO -->
+
+<article class="project-card">
+
+<div class="project-image portfolio">
+
+<div class="portfolio-symbol">
+✦
+</div>
+
+</div>
+
+<div class="project-info">
+
+<span class="project-tag">
+PORTFOLIO
+</span>
+
+<h3>My Portfolio</h3>
+
+<p>
+My personal software engineering portfolio,
+projects, skills, and experience.
+</p>
+
+<a
+href="https://professional-e-portfolio.vercel.app/"
+target="_blank"
+rel="noopener noreferrer"
+>
+View Portfolio →
+</a>
+
+</div>
+
+</article>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+PROCESS
+========================== -->
+
+<section class="section process-section">
+
+<div class="section-heading">
+
+<span>✦ THE JOURNEY</span>
+
+<h2>
+From idea to
+<em>launch.</em>
+</h2>
+
+</div>
+
+
+<div class="process">
+
+<div class="process-step">
+
+<div class="step-number">01</div>
+
+<h3>Tell Me Your Idea</h3>
+
+<p>
+Tell me what you're building, what you need,
+and what you want your visitors to experience.
+</p>
+
+</div>
+
+
+<div class="process-line"></div>
+
+
+<div class="process-step">
+
+<div class="step-number">02</div>
+
+<h3>Design the Experience</h3>
+
+<p>
+I create the structure, visual direction,
+responsive layout, and interactions.
+</p>
+
+</div>
+
+
+<div class="process-line"></div>
+
+
+<div class="process-step">
+
+<div class="step-number">03</div>
+
+<h3>Launch</h3>
+
+<p>
+Your finished website gets deployed and
+launched into the digital universe.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+CONTACT
+========================== -->
+
+<section class="contact-section" id="contact">
+
+<div class="contact-glow"></div>
+
+<div class="contact-content">
+
+<span>✦ READY TO LAUNCH?</span>
+
+<h2>
+Let's build something
+<strong>out of this world.</strong>
+</h2>
+
+<p>
+Have a business, idea, project, or website in mind?
+Let's talk about it.
+</p>
+
+<div class="contact-buttons">
+
+<a
+class="btn btn-primary"
+href="mailto:sammiecrisman@gmail.com?subject=Website Project Inquiry"
+>
+✉️ Email Me
+</a>
+
+<a
+class="btn btn-secondary"
+href="tel:+17147971287"
+>
+📱 Call Me
+</a>
+
+</div>
+
+<div class="contact-details">
+
+<a href="mailto:sammiecrisman@gmail.com">
+sammiecrisman@gmail.com
+</a>
+
+<span>•</span>
+
+<a href="tel:+17147971287">
+(714) 797-1287
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+</main>
+
+
+<!-- =========================
+FOOTER
+========================== -->
+
+<footer>
+
+<div class="footer-logo">
+✦ Sammie Crisman
+</div>
+
+<p>
+Software Engineer • Web Developer • Technologist
+</p>
+
+<p class="copyright">
+© <span id="year"></span> Sammie Crisman. Built among the stars. 🌌
+</p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
