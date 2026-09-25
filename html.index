@@ -4,11 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Sammie Crisman | Web Developer & Software Engineer</title>
+<title>Sammie Web Design | Websites Beyond Ordinary</title>
 
 <meta
 name="description"
-content="Custom websites and software experiences created by Sammie Crisman."
+content="Custom websites designed and built by Sammie. Beautiful, responsive websites for businesses, creators, events, and brands."
 >
 
 <link rel="stylesheet" href="style.css">
@@ -21,23 +21,21 @@ GALAXY BACKGROUND
 ========================== -->
 
 <div class="space">
+<div class="stars stars-one"></div>
+<div class="stars stars-two"></div>
+<div class="stars stars-three"></div>
+
 <div class="milky-way"></div>
-
-<div class="stars stars-1"></div>
-<div class="stars stars-2"></div>
-<div class="stars stars-3"></div>
-
-<div class="planet planet-one"></div>
-<div class="planet planet-two"></div>
-<div class="planet planet-three"></div>
-
-<div class="orbit orbit-one"></div>
-<div class="orbit orbit-two"></div>
 
 <div class="shooting-star shooting-star-one"></div>
 <div class="shooting-star shooting-star-two"></div>
 <div class="shooting-star shooting-star-three"></div>
+
+<div class="planet planet-one"></div>
+<div class="planet planet-two"></div>
+<div class="planet planet-three"></div>
 </div>
+
 
 <!-- =========================
 NAVIGATION
@@ -45,26 +43,39 @@ NAVIGATION
 
 <header class="navbar">
 
-<div class="logo">
-<span>✦</span>
-Sammie Crisman
-</div>
+<a href="#home" class="logo">
+<span class="logo-star">✦</span>
+Sammie<span>Web</span>
+</a>
 
-<nav>
+<nav id="navMenu">
 <a href="#home">Home</a>
 <a href="#services">Services</a>
 <a href="#pricing">Pricing</a>
 <a href="#projects">Projects</a>
+<a href="#process">Process</a>
 <a href="#contact">Contact</a>
 </nav>
 
+<div class="nav-actions">
+
 <button
-class="theme-toggle"
 id="themeToggle"
-aria-label="Toggle light and dark galaxy mode"
+class="theme-toggle"
+aria-label="Toggle light and dark mode"
 >
-🌙
+☾
 </button>
+
+<button
+id="menuToggle"
+class="menu-toggle"
+aria-label="Open menu"
+>
+☰
+</button>
+
+</div>
 
 </header>
 
@@ -75,12 +86,12 @@ HERO
 
 <main>
 
-<section class="hero" id="home">
+<section id="home" class="hero">
 
 <div class="hero-content">
 
 <div class="eyebrow">
-✨ SOFTWARE • DESIGN • DIGITAL EXPERIENCES
+✦ CUSTOM WEB DESIGN ✦
 </div>
 
 <h1>
@@ -89,47 +100,55 @@ Websites That Feel
 </h1>
 
 <p class="hero-text">
-Beautiful, responsive websites and digital experiences designed
-to help businesses, creators, and entrepreneurs stand out online.
+Beautiful, responsive websites designed to make
+your business, brand, event, or idea impossible
+to ignore.
 </p>
 
 <div class="hero-buttons">
 
 <a href="#pricing" class="btn btn-primary">
-🚀 View Pricing
+View Pricing
 </a>
 
 <a href="#projects" class="btn btn-secondary">
-✨ Explore My Work
+See My Work
 </a>
 
 </div>
 
 <div class="hero-contact">
-
-<a href="mailto:sammiecrisman@gmail.com">
-✉️ sammiecrisman@gmail.com
-</a>
-
-<a href="tel:+17147971287">
-📱 (714) 797-1287
-</a>
+<span>✦ Custom coded</span>
+<span>✦ Mobile friendly</span>
+<span>✦ Built for you</span>
+</div>
 
 </div>
 
+
+<!-- HERO PLANET SYSTEM -->
+
+<div class="hero-space">
+
+<div class="orbit orbit-one">
+<div class="orbit-planet"></div>
+</div>
+
+<div class="orbit orbit-two">
+<div class="orbit-planet orbit-planet-pink"></div>
+</div>
+
+<div class="orbit orbit-three">
+<div class="orbit-planet orbit-planet-blue"></div>
 </div>
 
 <div class="hero-planet">
 
+<div class="planet-ring"></div>
+
 <div class="planet-glow"></div>
 
-<div class="planet-main">
-<div class="planet-crater crater-one"></div>
-<div class="planet-crater crater-two"></div>
-<div class="planet-crater crater-three"></div>
 </div>
-
-<div class="planet-ring"></div>
 
 </div>
 
@@ -140,20 +159,22 @@ to help businesses, creators, and entrepreneurs stand out online.
 SERVICES
 ========================== -->
 
-<section class="section" id="services">
+<section id="services" class="section">
 
 <div class="section-heading">
 
-<span>✦ WHAT I BUILD</span>
+<div class="section-label">
+WHAT I BUILD
+</div>
 
 <h2>
-Digital experiences
-<em>with personality.</em>
+Your idea.
+<span>My code.</span>
 </h2>
 
 <p>
-No cookie-cutter websites. I build responsive, modern experiences
-designed around your brand and your goals.
+From a simple business website to a completely
+custom digital experience.
 </p>
 
 </div>
@@ -161,40 +182,98 @@ designed around your brand and your goals.
 
 <div class="service-grid">
 
-<article class="glass-card">
-<div class="service-icon">🌌</div>
-<h3>Custom Websites</h3>
+<article class="glass-card service-card">
+
+<div class="service-icon">
+✦
+</div>
+
+<h3>Business Websites</h3>
+
 <p>
-Modern responsive websites built from the ground up with
-attention to design, performance, and usability.
+Professional websites designed to make your
+business look established, trustworthy,
+and memorable.
 </p>
+
+<ul>
+<li>Responsive design</li>
+<li>Custom branding</li>
+<li>Contact forms</li>
+<li>Mobile optimization</li>
+</ul>
+
 </article>
 
-<article class="glass-card">
-<div class="service-icon">💻</div>
-<h3>Web Applications</h3>
+
+<article class="glass-card service-card">
+
+<div class="service-icon">
+◈
+</div>
+
+<h3>Personal Brands</h3>
+
 <p>
-Interactive React applications, dashboards, tools,
-forms, and custom functionality.
+Stand out online with a custom portfolio,
+creator site, resume website, or personal
+brand experience.
 </p>
+
+<ul>
+<li>Portfolio pages</li>
+<li>Project showcases</li>
+<li>About sections</li>
+<li>Social links</li>
+</ul>
+
 </article>
 
-<article class="glass-card">
-<div class="service-icon">✨</div>
-<h3>Beautiful UI</h3>
+
+<article class="glass-card service-card">
+
+<div class="service-icon">
+♢
+</div>
+
+<h3>Events & Celebrations</h3>
+
 <p>
-Animations, gradients, glass effects, responsive layouts,
-and visual experiences that make websites memorable.
+Beautiful custom websites for weddings,
+baby showers, birthdays, parties, reunions,
+and special events.
 </p>
+
+<ul>
+<li>Event information</li>
+<li>RSVP sections</li>
+<li>Gift registries</li>
+<li>Custom themes</li>
+</ul>
+
 </article>
 
-<article class="glass-card">
-<div class="service-icon">🚀</div>
-<h3>Launch & Deployment</h3>
+
+<article class="glass-card service-card">
+
+<div class="service-icon">
+◉
+</div>
+
+<h3>Custom Experiences</h3>
+
 <p>
-Deployment, hosting setup, domain connection,
-optimization, and getting your site live.
+Got an unusual idea? I can build custom
+interactive experiences around your concept.
 </p>
+
+<ul>
+<li>Interactive effects</li>
+<li>Animations</li>
+<li>Custom layouts</li>
+<li>Creative interfaces</li>
+</ul>
+
 </article>
 
 </div>
@@ -206,20 +285,21 @@ optimization, and getting your site live.
 PRICING
 ========================== -->
 
-<section class="section pricing-section" id="pricing">
+<section id="pricing" class="section pricing-section">
 
 <div class="section-heading">
 
-<span>✦ PRICING</span>
+<div class="section-label">
+SIMPLE PRICING
+</div>
 
 <h2>
 Choose your
-<em>launch.</em>
+<span>launch.</span>
 </h2>
 
 <p>
-Straightforward packages for businesses, creators,
-and people who want something extraordinary.
+Every website is customized to your needs.
 </p>
 
 </div>
@@ -231,32 +311,40 @@ and people who want something extraordinary.
 
 <article class="pricing-card">
 
-<div class="pricing-icon">🌙</div>
+<div class="pricing-top">
 
-<h3>Starter</h3>
+<span class="pricing-name">
+STARTER
+</span>
 
 <div class="price">
-<sup>$</sup>1,000
+<small>$</small>1,000
 </div>
 
-<p class="price-description">
-A polished online presence for getting started.
+<p>
+Perfect for getting your idea online.
 </p>
 
-<ul>
-<li>✓ 1–3 pages</li>
-<li>✓ Responsive design</li>
-<li>✓ Custom styling</li>
+</div>
+
+<div class="pricing-line"></div>
+
+<ul class="features">
+
+<li>✓ Custom website</li>
+<li>✓ Up to 3 pages</li>
+<li>✓ Mobile responsive</li>
+<li>✓ Custom colors & branding</li>
 <li>✓ Contact section</li>
-<li>✓ Basic animations</li>
-<li>✓ Deployment</li>
+<li>✓ Deployment assistance</li>
+
 </ul>
 
 <a
-href="mailto:sammiecrisman@gmail.com?subject=Starter Website Inquiry"
-class="pricing-btn"
+href="#contact"
+class="btn btn-primary full-btn"
 >
-Launch This
+Start My Website
 </a>
 
 </article>
@@ -270,33 +358,41 @@ Launch This
 MOST POPULAR
 </div>
 
-<div class="pricing-icon">🪐</div>
+<div class="pricing-top">
 
-<h3>Professional</h3>
+<span class="pricing-name">
+PROFESSIONAL
+</span>
 
 <div class="price">
-<sup>$</sup>1,500
+<small>$</small>1,500
 </div>
 
-<p class="price-description">
-A complete custom website built around your brand.
+<p>
+A complete professional web presence.
 </p>
 
-<ul>
+</div>
+
+<div class="pricing-line"></div>
+
+<ul class="features">
+
+<li>✓ Everything in Starter</li>
 <li>✓ Up to 6 pages</li>
-<li>✓ Custom UI/UX</li>
 <li>✓ Advanced animations</li>
-<li>✓ Contact forms</li>
-<li>✓ Mobile optimization</li>
-<li>✓ Deployment</li>
+<li>✓ Portfolio/gallery</li>
+<li>✓ Custom forms</li>
 <li>✓ SEO foundations</li>
+<li>✓ Social integration</li>
+
 </ul>
 
 <a
-href="mailto:sammiecrisman@gmail.com?subject=Professional Website Inquiry"
-class="pricing-btn"
+href="#contact"
+class="btn btn-primary full-btn"
 >
-Build My Site
+Build My Website
 </a>
 
 </article>
@@ -306,33 +402,41 @@ Build My Site
 
 <article class="pricing-card">
 
-<div class="pricing-icon">🌠</div>
+<div class="pricing-top">
 
-<h3>Premium</h3>
+<span class="pricing-name">
+PREMIUM
+</span>
 
 <div class="price">
-<sup>$</sup>2,500+
+<small>$</small>2,500<span>+</span>
 </div>
 
-<p class="price-description">
-A fully customized digital experience.
+<p>
+A fully custom digital experience.
 </p>
 
-<ul>
-<li>✓ Custom website</li>
-<li>✓ Advanced React functionality</li>
-<li>✓ Premium animations</li>
-<li>✓ Interactive components</li>
-<li>✓ Custom integrations</li>
-<li>✓ Deployment</li>
-<li>✓ Priority support</li>
+</div>
+
+<div class="pricing-line"></div>
+
+<ul class="features">
+
+<li>✓ Everything in Professional</li>
+<li>✓ Unlimited pages</li>
+<li>✓ Advanced interactions</li>
+<li>✓ Custom functionality</li>
+<li>✓ Advanced visual effects</li>
+<li>✓ Priority revisions</li>
+<li>✓ Personalized support</li>
+
 </ul>
 
 <a
-href="mailto:sammiecrisman@gmail.com?subject=Premium Website Inquiry"
-class="pricing-btn"
+href="#contact"
+class="btn btn-primary full-btn"
 >
-Let's Build It
+Let's Build Something Huge
 </a>
 
 </article>
@@ -343,17 +447,13 @@ Let's Build It
 <div class="maintenance">
 
 <div>
-<strong>🌌 Website Care & Maintenance</strong>
+<strong>Need ongoing updates?</strong>
 
-<p>
-Optional ongoing updates, maintenance, hosting assistance,
-and improvements.
-</p>
+<span>
+Website maintenance available from
+<b>$49–$99/month</b>.
+</span>
 </div>
-
-<strong class="maintenance-price">
-$49–$99/month
-</strong>
 
 </div>
 
@@ -364,221 +464,219 @@ $49–$99/month
 PROJECTS
 ========================== -->
 
-<section class="section" id="projects">
+<section id="projects" class="section">
 
 <div class="section-heading">
 
-<span>✦ SELECTED WORK</span>
+<div class="section-label">
+SELECTED WORK
+</div>
 
 <h2>
-A few things I've
-<em>built.</em>
+Things I've
+<span>built.</span>
 </h2>
+
+<p>
+A few examples of websites and projects.
+</p>
 
 </div>
 
 
-<div class="projects-grid">
+<div class="project-grid">
 
 
 <!-- BABY SHOWER -->
 
-<article class="project-card">
-
-<div class="project-image baby">
-
-<div class="project-stars">✦ · ✧ · ★ · ✦</div>
-
-<div class="project-preview">
-🧜‍♀️
-</div>
-
-</div>
-
-<div class="project-info">
-
-<span class="project-tag">
-EVENT WEBSITE
-</span>
-
-<h3>Baby Shower Experience</h3>
-
-<p>
-An ocean-inspired interactive baby shower website
-with animations, RSVP information, and custom visuals.
-</p>
-
 <a
 href="https://baby-shower-omega-livid.vercel.app/#invitation"
 target="_blank"
-rel="noopener noreferrer"
+rel="noopener"
+class="project-card project-ocean"
 >
-View Project →
-</a>
 
+<div class="project-glow"></div>
+
+<div class="project-icon">
+🐚
 </div>
 
-</article>
+<div class="project-content">
 
-
-<!-- T MONEY -->
-
-<article class="project-card">
-
-<div class="project-image money">
-
-<div class="money-symbol">$</div>
-
-<div class="record"></div>
-
-</div>
-
-<div class="project-info">
-
-<span class="project-tag">
-BRAND / MUSIC
+<span>
+EVENT WEBSITE
 </span>
 
-<h3>T-Money Records</h3>
+<h3>
+Baby Shower
+</h3>
 
 <p>
-A bold music and merchandise experience created
-around the T-Money Records brand.
+An ocean-inspired interactive
+baby shower experience.
 </p>
+
+<strong>
+View Project →
+</strong>
+
+</div>
+
+</a>
+
+
+<!-- T-MONEY -->
 
 <a
 href="https://tmr-mu.vercel.app"
 target="_blank"
-rel="noopener noreferrer"
+rel="noopener"
+class="project-card project-money"
 >
+
+<div class="project-glow"></div>
+
+<div class="project-icon">
+💿
+</div>
+
+<div class="project-content">
+
+<span>
+MUSIC / BRAND
+</span>
+
+<h3>
+T-Money Records
+</h3>
+
+<p>
+A bold music-store concept featuring
+records, merchandise, and branding.
+</p>
+
+<strong>
 View Project →
-</a>
+</strong>
 
 </div>
 
-</article>
+</a>
 
 
 <!-- FINAL PROJECT -->
 
-<article class="project-card">
-
-<div class="project-image code">
-
-<div class="code-symbol">
-&lt;/&gt;
-</div>
-
-<div class="floating-code">
-React • JavaScript • CSS
-</div>
-
-</div>
-
-<div class="project-info">
-
-<span class="project-tag">
-WEB DEVELOPMENT
-</span>
-
-<h3>Final Project</h3>
-
-<p>
-A software development project demonstrating
-frontend engineering and interactive web development.
-</p>
-
 <a
 href="https://final-project-module-5.vercel.app"
 target="_blank"
-rel="noopener noreferrer"
+rel="noopener"
+class="project-card project-code"
 >
-View Project →
-</a>
 
+<div class="project-glow"></div>
+
+<div class="project-icon">
+&lt;/&gt;
 </div>
 
-</article>
+<div class="project-content">
 
-
-<!-- BLUE WATER YACHTS -->
-
-<article class="project-card">
-
-<div class="project-image yacht">
-
-<div class="waves">
-≋ ≋ ≋
-</div>
-
-<div class="yacht-icon">
-⛵
-</div>
-
-</div>
-
-<div class="project-info">
-
-<span class="project-tag">
-BUSINESS WEBSITE
+<span>
+WEB DEVELOPMENT
 </span>
 
-<h3>Blue Water Yachts</h3>
+<h3>
+Final Project
+</h3>
 
 <p>
-A marine-focused website concept showcasing
-luxury boats and blue-water adventures.
+A software development project demonstrating
+frontend development skills.
 </p>
 
-<!-- Replace this href with the live Blue Water Yachts URL -->
-<a
-href="#"
-onclick="alert('Blue Water Yachts project link coming soon!'); return false;"
->
+<strong>
 View Project →
-</a>
+</strong>
 
 </div>
 
-</article>
+</a>
+
+
+<!-- BLUE WATER -->
+
+<div
+class="project-card project-yacht"
+>
+
+<div class="project-glow"></div>
+
+<div class="project-icon">
+⚓
+</div>
+
+<div class="project-content">
+
+<span>
+CONCEPT
+</span>
+
+<h3>
+Blue Water Yachts
+</h3>
+
+<p>
+A luxury yacht website concept with
+an ocean-focused visual identity.
+</p>
+
+<strong>
+Coming Soon
+</strong>
+
+</div>
+
+</div>
 
 
 <!-- PORTFOLIO -->
 
-<article class="project-card">
-
-<div class="project-image portfolio">
-
-<div class="portfolio-symbol">
-✦
-</div>
-
-</div>
-
-<div class="project-info">
-
-<span class="project-tag">
-PORTFOLIO
-</span>
-
-<h3>My Portfolio</h3>
-
-<p>
-My personal software engineering portfolio,
-projects, skills, and experience.
-</p>
-
 <a
 href="https://professional-e-portfolio.vercel.app/"
 target="_blank"
-rel="noopener noreferrer"
+rel="noopener"
+class="project-card project-portfolio"
 >
+
+<div class="project-glow"></div>
+
+<div class="project-icon">
+✦
+</div>
+
+<div class="project-content">
+
+<span>
+PORTFOLIO
+</span>
+
+<h3>
+My Portfolio
+</h3>
+
+<p>
+My professional software engineering
+and technology portfolio.
+</p>
+
+<strong>
 View Portfolio →
-</a>
+</strong>
 
 </div>
 
-</article>
+</a>
 
 </div>
 
@@ -589,65 +687,91 @@ View Portfolio →
 PROCESS
 ========================== -->
 
-<section class="section process-section">
+<section id="process" class="section process-section">
 
 <div class="section-heading">
 
-<span>✦ THE JOURNEY</span>
+<div class="section-label">
+THE PROCESS
+</div>
 
 <h2>
 From idea to
-<em>launch.</em>
+<span>launch.</span>
 </h2>
 
 </div>
 
 
-<div class="process">
+<div class="process-grid">
 
 <div class="process-step">
 
-<div class="step-number">01</div>
+<div class="process-number">
+01
+</div>
 
-<h3>Tell Me Your Idea</h3>
+<h3>
+Tell Me Your Idea
+</h3>
 
 <p>
-Tell me what you're building, what you need,
-and what you want your visitors to experience.
+Tell me what you want your website
+to accomplish and the style you're after.
 </p>
 
 </div>
 
 
-<div class="process-line"></div>
-
-
 <div class="process-step">
 
-<div class="step-number">02</div>
+<div class="process-number">
+02
+</div>
 
-<h3>Design the Experience</h3>
+<h3>
+Design
+</h3>
 
 <p>
-I create the structure, visual direction,
-responsive layout, and interactions.
+I'll create the visual direction,
+layout, colors, and overall experience.
 </p>
 
 </div>
 
 
-<div class="process-line"></div>
+<div class="process-step">
+
+<div class="process-number">
+03
+</div>
+
+<h3>
+Build
+</h3>
+
+<p>
+Your website gets custom coded and
+optimized for phones, tablets, and desktops.
+</p>
+
+</div>
 
 
 <div class="process-step">
 
-<div class="step-number">03</div>
+<div class="process-number">
+04
+</div>
 
-<h3>Launch</h3>
+<h3>
+Launch
+</h3>
 
 <p>
-Your finished website gets deployed and
-launched into the digital universe.
+Your new website goes live and is ready
+for the world to see.
 </p>
 
 </div>
@@ -661,54 +785,47 @@ launched into the digital universe.
 CONTACT
 ========================== -->
 
-<section class="contact-section" id="contact">
+<section id="contact" class="contact-section">
 
-<div class="contact-glow"></div>
+<div class="contact-orbit orbit-contact-one"></div>
+<div class="contact-orbit orbit-contact-two"></div>
 
 <div class="contact-content">
 
-<span>✦ READY TO LAUNCH?</span>
+<div class="section-label">
+READY TO LAUNCH?
+</div>
 
 <h2>
 Let's build something
-<strong>out of this world.</strong>
+<span>extraordinary.</span>
 </h2>
 
 <p>
-Have a business, idea, project, or website in mind?
-Let's talk about it.
+Have a business, project, event, or wild idea?
+Tell me about it.
 </p>
 
 <div class="contact-buttons">
 
 <a
+href="mailto:sammiecrisman@gmail.com"
 class="btn btn-primary"
-href="mailto:sammiecrisman@gmail.com?subject=Website Project Inquiry"
 >
-✉️ Email Me
+✉ Email Me
 </a>
 
 <a
-class="btn btn-secondary"
 href="tel:+17147971287"
+class="btn btn-secondary"
 >
-📱 Call Me
+☎ (714) 797-1287
 </a>
 
 </div>
 
-<div class="contact-details">
-
-<a href="mailto:sammiecrisman@gmail.com">
+<div class="contact-email">
 sammiecrisman@gmail.com
-</a>
-
-<span>•</span>
-
-<a href="tel:+17147971287">
-(714) 797-1287
-</a>
-
 </div>
 
 </div>
@@ -725,16 +842,20 @@ FOOTER
 <footer>
 
 <div class="footer-logo">
-✦ Sammie Crisman
+<span>✦</span>
+SammieWeb
 </div>
 
 <p>
-Software Engineer • Web Developer • Technologist
+Custom websites designed beyond the ordinary.
 </p>
 
-<p class="copyright">
-© <span id="year"></span> Sammie Crisman. Built among the stars. 🌌
-</p>
+<div class="footer-line"></div>
+
+<small>
+© <span id="year"></span> Sammie Web Design.
+All rights reserved.
+</small>
 
 </footer>
 
