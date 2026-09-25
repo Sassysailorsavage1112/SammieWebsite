@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SammieWeb | Websites That Feel Out of This World</title>
+
+<meta
+name="description"
+content="Custom websites designed and built by Sammie. Business websites, personal brands, events, and custom digital experiences."
+>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- GALAXY BACKGROUND -->
+<div class="galaxy-background">
+<div class="stars stars-one"></div>
+<div class="stars stars-two"></div>
+<div class="stars stars-three"></div>
+
+<div class="nebula"></div>
+<div class="milky-way"></div>
+
+<div class="planet planet-one"></div>
+<div class="planet planet-two"></div>
+<div class="planet planet-three"></div>
+</div>
+
+
+<!-- NAVIGATION -->
+<header class="navbar">
+
+<a href="#home" class="logo">
+<span>✦</span> SammieWeb
+</a>
+
+<button
+class="menu-button"
+id="menuButton"
+aria-label="Open navigation menu"
+>
+☰
+</button>
+
+<nav id="navigation">
+<a href="#home">Home</a>
+<a href="#services">Services</a>
+<a href="#pricing">Pricing</a>
+<a href="#projects">Projects</a>
+<a href="#process">Process</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<button
+class="theme-button"
+id="themeButton"
+aria-label="Toggle light mode"
+>
+☀
+</button>
+
+</header>
+
+
+<main>
+
+<!-- HERO -->
+<section class="hero section" id="home">
+
+<div class="hero-content">
+
+<div class="eyebrow">
+✦ CUSTOM WEB DESIGN ✦
+</div>
+
+<h1>
+Websites That Feel
+<span>Out of This World.</span>
+</h1>
+
+<p>
+Beautiful, responsive websites designed to make your brand,
+business, event, or idea impossible to ignore.
+</p>
+
+<div class="hero-buttons">
+
+<a href="#pricing" class="button primary">
+View Pricing
+</a>
+
+<a href="#projects" class="button secondary">
+See My Work
+</a>
+
+</div>
+
+<div class="hero-stats">
+
+<div>
+<strong>100%</strong>
+<span>Custom Design</span>
+</div>
+
+<div>
+<strong>Mobile</strong>
+<span>Friendly</span>
+</div>
+
+<div>
+<strong>Fast</strong>
+<span>Modern Builds</span>
+</div>
+
+</div>
+
+</div>
+
+
+<!-- ORBIT SYSTEM -->
+<div class="orbit-system">
+
+<div class="orbit orbit-large"></div>
+<div class="orbit orbit-medium"></div>
+<div class="orbit orbit-small"></div>
+
+<div class="sun"></div>
+
+<div class="orbit-planet planet-a"></div>
+<div class="orbit-planet planet-b"></div>
+<div class="orbit-planet planet-c"></div>
+
+</div>
+
+</section>
+
+
+<!-- SERVICES -->
+<section class="section" id="services">
+
+<div class="section-heading">
+
+<div class="eyebrow">
+WHAT I BUILD
+</div>
+
+<h2>
+Your idea.
+<span>My code.</span>
+</h2>
+
+<p>
+From simple professional websites to completely custom
+digital experiences.
+</p>
+
+</div>
+
+
+<div class="service-grid">
+
+<article class="glass-card">
+
+<div class="card-icon">🚀</div>
+
+<h3>Business Websites</h3>
+
+<p>
+Professional websites designed to help your business
+look established and attract customers.
+</p>
+
+<ul>
+<li>Responsive design</li>
+<li>Contact forms</li>
+<li>Modern layouts</li>
+<li>SEO-ready structure</li>
+</ul>
+
+</article>
+
+
+<article class="glass-card">
+
+<div class="card-icon">✨</div>
+
+<h3>Personal Brands</h3>
+
+<p>
+Portfolio and personal websites that show people exactly
+who you are and what you can do.
+</p>
+
+<ul>
+<li>Portfolio pages</li>
+<li>About sections</li>
+<li>Project showcases</li>
+<li>Custom branding</li>
+</ul>
+
+</article>
+
+
+<article class="glass-card">
+
+<div class="card-icon">🌙</div>
+
+<h3>Events & Celebrations</h3>
+
+<p>
+Custom websites for weddings, baby showers, parties,
+reunions, announcements and special events.
+</p>
+
+<ul>
+<li>Event information</li>
+<li>Photo galleries</li>
+<li>RSVP sections</li>
+<li>Custom themes</li>
+</ul>
+
+</article>
+
+
+<article class="glass-card">
+
+<div class="card-icon">🌌</div>
+
+<h3>Custom Experiences</h3>
+
+<p>
+Have an unusual idea? I can build something specifically
+around your concept instead of forcing you into a template.
+</p>
+
+<ul>
+<li>Interactive pages</li>
+<li>Animations</li>
+<li>Custom interfaces</li>
+<li>Unique visual effects</li>
+</ul>
+
+</article>
+
+</div>
+
+</section>
+
+
+<!-- PRICING -->
+<section class="section pricing-section" id="pricing">
+
+<div class="section-heading">
+
+<div class="eyebrow">
+SIMPLE PRICING
+</div>
+
+<h2>
+Choose your
+<span>launch.</span>
+</h2>
+
+</div>
+
+
+<div class="pricing-grid">
+
+<article class="price-card">
+
+<h3>Starter</h3>
+
+<div class="price">
+$1,000
+</div>
+
+<p>Perfect for a clean professional presence.</p>
+
+<ul>
+<li>1–3 pages</li>
+<li>Mobile responsive</li>
+<li>Custom design</li>
+<li>Contact section</li>
+<li>Deployment assistance</li>
+</ul>
+
+<a href="#contact" class="button secondary">
+Start a Project
+</a>
+
+</article>
+
+
+<article class="price-card featured">
+
+<div class="popular">
+MOST POPULAR
+</div>
+
+<h3>Professional</h3>
+
+<div class="price">
+$1,500
+</div>
+
+<p>
+A complete website built around your brand.
+</p>
+
+<ul>
+<li>Up to 6 pages</li>
+<li>Custom visual design</li>
+<li>Animations</li>
+<li>Project/gallery sections</li>
+<li>Mobile optimization</li>
+<li>Deployment assistance</li>
+</ul>
+
+<a href="#contact" class="button primary">
+Build My Website
+</a>
+
+</article>
+
+
+<article class="price-card">
+
+<h3>Premium</h3>
+
+<div class="price">
+$2,500+
+</div>
+
+<p>
+For larger or highly customized projects.
+</p>
+
+<ul>
+<li>Multi-page websites</li>
+<li>Advanced animations</li>
+<li>Custom functionality</li>
+<li>Advanced layouts</li>
+<li>Custom integrations</li>
+<li>Priority development</li>
+</ul>
+
+<a href="#contact" class="button secondary">
+Let's Talk
+</a>
+
+</article>
+
+</div>
+
+
+<div class="maintenance">
+
+<strong>Website Care</strong>
+
+<span>$49–$99/month</span>
+
+<p>
+Optional ongoing updates, maintenance and improvements.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- PROJECTS -->
+<section class="section" id="projects">
+
+<div class="section-heading">
+
+<div class="eyebrow">
+SELECTED WORK
+</div>
+
+<h2>
+Things I've
+<span>built.</span>
+</h2>
+
+</div>
+
+
+<div class="project-grid">
+
+
+<a
+class="project-card baby"
+href="https://baby-shower-omega-livid.vercel.app/#invitation"
+target="_blank"
+rel="noopener noreferrer"
+>
+
+<div class="project-overlay">
+
+<span>EVENT WEBSITE</span>
+
+<h3>Baby Shower</h3>
+
+<p>
+Ocean-inspired celebration website.
+</p>
+
+<strong>
+View Project →
+</strong>
+
+</div>
+
+</a>
+
+
+<a
+class="project-card records"
+href="https://tmr-mu.vercel.app"
+target="_blank"
+rel="noopener noreferrer"
+>
+
+<div class="project-overlay">
+
+<span>MUSIC / STORE</span>
+
+<h3>T-Money Records</h3>
+
+<p>
+A bold music and merchandise concept.
+</p>
+
+<strong>
+View Project →
+</strong>
+
+</div>
+
+</a>
+
+
+<a
+class="project-card final-project"
+href="https://final-project-module-5.vercel.app/"
+target="_blank"
+rel="noopener noreferrer"
+>
+
+<div class="project-overlay">
+
+<span>WEB PROJECT</span>
+
+<h3>Bluewater Yachts</h3>
+
+<p>
+Interactive web development project.
+</p>
+
+<strong>
+View Project →
+</strong>
+
+</div>
+
+</a>
+
+
+<a
+class="project-card portfolio"
+href="https://professional-e-portfolio.vercel.app/"
+target="_blank"
+rel="noopener noreferrer"
+>
+
+<div class="project-overlay">
+
+<span>PORTFOLIO</span>
+
+<h3>My Portfolio</h3>
+
+<p>
+Explore more of my work and experience.
+</p>
+
+<strong>
+View Portfolio →
+</strong>
+
+</div>
+
+</a>
+
+</div>
+
+</section>
+
+
+<!-- PROCESS -->
+<section class="section" id="process">
+
+<div class="section-heading">
+
+<div class="eyebrow">
+HOW IT WORKS
+</div>
+
+<h2>
+Idea to
+<span>launch.</span>
+</h2>
+
+</div>
+
+
+<div class="process-grid">
+
+<div class="process-step">
+
+<div class="number">01</div>
+
+<h3>Tell Me Your Idea</h3>
+
+<p>
+Tell me what you want your website to accomplish.
+</p>
+
+</div>
+
+
+<div class="process-step">
+
+<div class="number">02</div>
+
+<h3>Design</h3>
+
+<p>
+I create the visual direction and structure.
+</p>
+
+</div>
+
+
+<div class="process-step">
+
+<div class="number">03</div>
+
+<h3>Build</h3>
+
+<p>
+Your website is developed and optimized for mobile.
+</p>
+
+</div>
+
+
+<div class="process-step">
+
+<div class="number">04</div>
+
+<h3>Launch</h3>
+
+<p>
+Your finished website goes live.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CONTACT -->
+<section class="section contact-section" id="contact">
+
+<div class="contact-box">
+
+<div class="eyebrow">
+READY TO BUILD?
+</div>
+
+<h2>
+Let's create something
+<span>beautiful.</span>
+</h2>
+
+<p>
+Tell me what you're imagining and let's turn it into
+a website people remember.
+</p>
+
+<div class="contact-buttons">
+
+<a
+class="button primary"
+href="mailto:sammiecrisman@gmail.com"
+>
+Email Me
+</a>
+
+<a
+class="button secondary"
+href="tel:+17147971287"
+>
+Call (714) 797-1287
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+</main>
+
+
+<!-- FOOTER -->
+<footer>
+
+<div class="footer-logo">
+✦ SammieWeb
+</div>
+
+<p>
+Custom websites built with code, creativity and a little cosmic energy.
+</p>
+
+<p class="copyright">
+© <span id="year"></span> SammieWeb. All rights reserved.
+</p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
