@@ -1,13 +1,8 @@
-/* =========================================================
-SAMMIE WEB DESIGN
-GALAXY WEBSITE JAVASCRIPT
-========================================================= */
+document.addEventListener("DOMContentLoaded", function () {
 
-document.addEventListener("DOMContentLoaded", () => {
-
-/* =====================================================
-YEAR
-===================================================== */
+/* =========================
+CURRENT YEAR
+========================= */
 
 const year = document.getElementById("year");
 
@@ -16,39 +11,35 @@ year.textContent = new Date().getFullYear();
 }
 
 
-/* =====================================================
+/* =========================
 MOBILE MENU
-===================================================== */
+========================= */
 
-const menuToggle =
-document.getElementById("menuToggle");
+const menuButton = document.getElementById("menuButton");
+const navigation = document.getElementById("navigation");
 
-const navMenu =
-document.getElementById("navMenu");
+if (menuButton && navigation) {
 
-if (menuToggle && navMenu) {
+menuButton.addEventListener("click", function () {
 
-menuToggle.addEventListener("click", () => {
+navigation.classList.toggle("open");
 
-navMenu.classList.toggle("open");
-
-const isOpen =
-navMenu.classList.contains("open");
-
-menuToggle.textContent =
-isOpen ? "✕" : "☰";
+if (navigation.classList.contains("open")) {
+menuButton.textContent = "✕";
+} else {
+menuButton.textContent = "☰";
+}
 
 });
 
 
-navMenu.querySelectorAll("a").forEach(link => {
+const navLinks = navigation.querySelectorAll("a");
 
-link.addEventListener("click", () => {
+navLinks.forEach(function (link) {
 
-navMenu.classList.remove("open");
-
-menuToggle.textContent = "☰";
-
+link.addEventListener("click", function () {
+navigation.classList.remove("open");
+menuButton.textContent = "☰";
 });
 
 });
@@ -56,154 +47,73 @@ menuToggle.textContent = "☰";
 }
 
 
-/* =====================================================
-DARK / LIGHT MODE
-===================================================== */
+/* =========================
+LIGHT / DARK MODE
+========================= */
 
-const themeToggle =
-document.getElementById("themeToggle");
+const themeButton = document.getElementById("themeButton");
 
-const savedTheme =
-localStorage.getItem("sammie-theme");
+if (themeButton) {
+
+const savedTheme = localStorage.getItem("sammie-theme");
 
 if (savedTheme === "light") {
-
-document.body.classList.add("light-mode");
-
-if (themeToggle) {
-themeToggle.textContent = "☀";
-}
-
+document.body.classList.add("light");
+themeButton.textContent = "☾";
 }
 
 
-if (themeToggle) {
+themeButton.addEventListener("click", function () {
 
-themeToggle.addEventListener("click", () => {
+document.body.classList.toggle("light");
 
-document.body.classList.toggle(
-"light-mode"
-);
+if (document.body.classList.contains("light")) {
 
-const isLight =
-document.body.classList.contains(
-"light-mode"
-);
+localStorage.setItem("sammie-theme", "light");
+themeButton.textContent = "☾";
 
-localStorage.setItem(
-"sammie-theme",
-isLight ? "light" : "dark"
-);
+} else {
 
-themeToggle.textContent =
-isLight ? "☀" : "☾";
+localStorage.setItem("sammie-theme", "dark");
+themeButton.textContent = "☀";
+
+}
 
 });
 
 }
 
 
-/* =====================================================
-SMOOTH SCROLL
-===================================================== */
+/* =========================
+STAR ANIMATION
+========================= */
 
-document.querySelectorAll(
-'a[href^="#"]'
-).forEach(link => {
+const starLayer = document.querySelector(".stars-three");
 
-link.addEventListener("click", event => {
+if (starLayer) {
 
-const targetID =
-link.getAttribute("href");
+for (let i = 0; i < 70; i++) {
 
-if (
-!targetID ||
-targetID === "#"
-) {
-return;
-}
+const star = document.createElement("span");
 
-const target =
-document.querySelector(targetID);
+star.style.position = "absolute";
+star.style.width = Math.random() * 3 + 1 + "px";
+star.style.height = star.style.width;
+star.style.borderRadius = "50%";
+star.style.background = "white";
 
-if (!target) {
-return;
-}
+star.style.left = Math.random() * 100 + "%";
+star.style.top = Math.random() * 100 + "%";
 
-event.preventDefault();
+star.style.opacity = Math.random();
 
-target.scrollIntoView({
-behavior: "smooth",
-block: "start"
-});
-
-});
-
-});
-
-
-/* =====================================================
-RANDOM STAR GENERATOR
-===================================================== */
-
-const space =
-document.querySelector(".space");
-
-if (space) {
-
-const starLayer =
-document.createElement("div");
-
-starLayer.className =
-"generated-stars";
-
-space.appendChild(starLayer);
-
-
-const starCount =
-window.innerWidth < 600
-? 90
-: 180;
-
-
-for (
-let i = 0;
-i < starCount;
-i++
-) {
-
-const star =
-document.createElement("span");
-
-star.className =
-"generated-star";
-
-
-const size =
-Math.random() * 2.5 + 0.5;
-
-
-star.style.width =
-`${size}px`;
-
-star.style.height =
-`${size}px`;
-
-
-star.style.left =
-`${Math.random() * 100}%`;
-
-star.style.top =
-`${Math.random() * 100}%`;
-
-
-star.style.animationDuration =
-`${2 + Math.random() * 5}s`;
-
+star.style.animation =
+"twinkle " +
+(Math.random() * 3 + 2) +
+"s ease-in-out infinite";
 
 star.style.animationDelay =
-`${Math.random() * 5}s`;
-
+Math.random() * 4 + "s";
 
 starLayer.appendChild(star);
 
@@ -212,202 +122,25 @@ starLayer.appendChild(star);
 }
 
 
-/* =====================================================
-EXTRA SHOOTING STARS
-===================================================== */
-
-function createShootingStar() {
-
-const star =
-document.createElement("div");
-
-star.className =
-"dynamic-shooting-star";
-
-
-star.style.top =
-`${Math.random() * 65}%`;
-
-star.style.left =
-`${60 + Math.random() * 35}%`;
-
-
-document.body.appendChild(star);
-
-
-star.animate(
-[
-{
-opacity: 0,
-transform:
-"translate(0,0) rotate(-35deg)"
-},
-
-{
-opacity: 1,
-transform:
-"translate(-80px,80px) rotate(-35deg)"
-},
-
-{
-opacity: 0,
-transform:
-"translate(-350px,350px) rotate(-35deg)"
-}
-],
-{
-duration: 1400,
-easing: "ease-out"
-}
-);
-
-
-setTimeout(() => {
-
-star.remove();
-
-}, 1500);
-
-}
-
-
-setInterval(() => {
-
-createShootingStar();
-
-}, 4500);
-
-
-/* =====================================================
-MOUSE PARALLAX
-===================================================== */
-
-const planets =
-document.querySelectorAll(
-".planet, .hero-planet, .orbit"
-);
-
-
-window.addEventListener(
-"mousemove",
-event => {
-
-const x =
-event.clientX /
-window.innerWidth -
-0.5;
-
-const y =
-event.clientY /
-window.innerHeight -
-0.5;
-
-
-planets.forEach(
-(planet, index) => {
-
-const movement =
-(index + 1) * 4;
-
-
-if (
-planet.classList.contains(
-"orbit"
-)
-) {
-
-return;
-
-}
-
-
-planet.style.marginLeft =
-`${x * movement}px`;
-
-planet.style.marginTop =
-`${y * movement}px`;
-
-}
-);
-
-}
-);
-
-
-/* =====================================================
-CARD GLOW
-===================================================== */
-
-const cards =
-document.querySelectorAll(
-".glass-card, .pricing-card, .project-card"
-);
-
-
-cards.forEach(card => {
-
-card.addEventListener(
-"mousemove",
-event => {
-
-const rect =
-card.getBoundingClientRect();
-
-
-const x =
-event.clientX -
-rect.left;
-
-
-const y =
-event.clientY -
-rect.top;
-
-
-card.style.setProperty(
-"--mouse-x",
-`${x}px`
-);
-
-
-card.style.setProperty(
-"--mouse-y",
-`${y}px`
-);
-
-}
-);
-
-});
-
-
-/* =====================================================
+/* =========================
 SCROLL REVEAL
-===================================================== */
+========================= */
 
-const revealItems =
-document.querySelectorAll(
-".service-card, .pricing-card, .project-card, .process-step"
+const revealItems = document.querySelectorAll(
+".glass-card, .price-card, .project-card, .process-step"
 );
 
+const observer = new IntersectionObserver(
+function (entries) {
 
-const observer =
-new IntersectionObserver(
-entries => {
+entries.forEach(function (entry) {
 
-entries.forEach(entry => {
+if (entry.isIntersecting) {
 
-if (
-entry.isIntersecting
-) {
+entry.target.style.opacity = "1";
+entry.target.style.transform = "translateY(0)";
 
-entry.target.classList.add(
-"visible"
-);
-
-observer.unobserve(
-entry.target
-);
+observer.unobserve(entry.target);
 
 }
 
@@ -415,107 +148,70 @@ entry.target
 
 },
 {
-threshold: 0.12
+threshold: 0.1
 }
 );
 
 
-revealItems.forEach(item => {
+revealItems.forEach(function (item) {
 
-item.classList.add(
-"reveal-item"
-);
+item.style.opacity = "0";
+item.style.transform = "translateY(25px)";
+item.style.transition =
+"opacity 0.7s ease, transform 0.7s ease";
 
 observer.observe(item);
 
 });
 
 
-/* =====================================================
-PROJECT CARD TILT
-===================================================== */
+/* =========================
+ORBIT ANIMATION
+========================= */
 
-const projectCards =
-document.querySelectorAll(
-".project-card"
-);
+const planetA = document.querySelector(".planet-a");
+const planetB = document.querySelector(".planet-b");
+const planetC = document.querySelector(".planet-c");
 
+let angle = 0;
 
-projectCards.forEach(card => {
+function animatePlanets() {
 
-card.addEventListener(
-"mousemove",
-event => {
+angle += 0.25;
 
-if (
-window.innerWidth < 800
-) {
-return;
+if (planetA) {
+planetA.style.transform =
+"rotate(" + angle + "deg) translateX(235px) rotate(-" + angle + "deg)";
 }
 
+if (planetB) {
+planetB.style.transform =
+"rotate(" + angle * 0.65 + "deg) translateX(165px) rotate(-" + angle * 0.65 + "deg)";
+}
 
-const rect =
-card.getBoundingClientRect();
+if (planetC) {
+planetC.style.transform =
+"rotate(" + angle * 1.5 + "deg) translateX(105px) rotate(-" + angle * 1.5 + "deg)";
+}
 
-
-const x =
-event.clientX -
-rect.left;
-
-
-const y =
-event.clientY -
-rect.top;
-
-
-const centerX =
-rect.width / 2;
-
-
-const centerY =
-rect.height / 2;
-
-
-const rotateX =
-((y - centerY) /
-centerY) *
--3;
-
-
-const rotateY =
-((x - centerX) /
-centerX) *
-3;
-
-
-card.style.transform =
-`perspective(900px)
-rotateX(${rotateX}deg)
-rotateY(${rotateY}deg)
-translateY(-10px)`;
+requestAnimationFrame(animatePlanets);
 
 }
-);
+
+animatePlanets();
 
 
-card.addEventListener(
-"mouseleave",
-() => {
-
-card.style.transform = "";
-
-}
-);
-
-});
-
-
-/* =====================================================
-CONSOLE
-===================================================== */
+/* =========================
+CONSOLE MESSAGE
+========================= */
 
 console.log(
-"✦ SammieWeb Galaxy loaded successfully."
+"%c✦ SammieWeb",
+"color:#c65cff;font-size:24px;font-weight:bold;"
+);
+
+console.log(
+"Websites built with code, creativity and a little cosmic energy."
 );
 
 });
